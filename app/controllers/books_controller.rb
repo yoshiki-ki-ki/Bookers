@@ -11,6 +11,7 @@ class BooksController < ApplicationController
   end
   
   def show
+    @list = List.find(params[])
   end
 
   def edit
