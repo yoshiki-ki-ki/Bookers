@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   def index
     @book = Book.new
+    @books = Book.all
   end
 
   def create
@@ -8,7 +9,7 @@ class BooksController < ApplicationController
     book.save
     redirect_to '/books/show'
   end
-
+  
   def show
   end
 
