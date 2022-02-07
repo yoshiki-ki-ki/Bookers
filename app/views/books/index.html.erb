@@ -10,7 +10,11 @@
   <span>
     <%= link_to "Edit", edit_book_path(book.id) %>
   </span>
+  <span>
+    <%= link_to "destroy", destroy_book_path(book.id), method: :delete, "data-confirm" => "Are you sure ?" %>
+  </span>
 <% end %>
+
 
 <h2>New books</h2>
 <%= form_with model: @book, local:true do |f| %>
