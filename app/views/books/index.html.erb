@@ -6,7 +6,7 @@
     <tr>
       <th>Title</th>
       <th>Body</th>
-      <th colspan=""></th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 　<tbody>
@@ -20,6 +20,7 @@
       <td>
         <%= link_to "Edit", edit_book_path(book.id) %>
       </td>
+        
       <td>
         <%= link_to "destroy", destroy_book_path(book.id), method: :delete, "data-confirm" => "Are you sure ?" %>
       </td>
@@ -40,7 +41,7 @@
       <% end %>
     </ul>
   <% end %>
-  
+
   <div class="field">
     <label for="book_title">Title</label>
     <%= f.text_field :title %>
