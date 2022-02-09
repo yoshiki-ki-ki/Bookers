@@ -68,4 +68,6 @@ p, ol, ul, td {
   color: #fff;
 }
 
-
+.flash {
+  color: green;
+}
